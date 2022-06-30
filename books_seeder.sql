@@ -8,3 +8,7 @@ VALUES ('To Kill a Mockingbird', 'Harper Lee', '1960-07-11', 'This is a book abo
        ('Harry Potter and the Sorcerer`s Stone', 'J.K. Rowling', '1997-06-26', 'This is a book about sorcerers.', 70),
        ('The Hobbit', 'J.R.R. Tolkien', '1937-07-21', 'This is a book about hobbits.', 5),
        ('The Song Of Achilles', 'Madeline Miller ', '2012-08-28', 'This is a book about the Trojan War.', 30);
+
+INSERT books (title, date_published, description)
+VALUES ('Test Book 1', '2002-01-01', 'Test book 1 description'),
+       ('Test Book 2', '2004-01-01', 'Test book 2 description');
