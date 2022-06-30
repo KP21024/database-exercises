@@ -1,15 +1,13 @@
-USE
-go_db;
+USE codeup_test_db;
 
-DROP TABLE IF EXISTS transactions;
+DROP TABLE IF EXISTS albums;
 
-CREATE TABLE transactions
-(
-    id            INT UNSIGNED AUTO_INCREMENT NOT NULL,
-    amount        DECIMAL(10, 2) NOT NULL,
-    created_at    DATETIME       NOT NULL,
-    message       VARCHAR(200) DEFAULT 'No memo yet',
-    account_id    INT            NOT NULL,
-    is_fraudulent BOOLEAN      DEFAULT 0,
-    PRIMARY KEY (id)
-);
+CREATE TABLE albums (
+    id  INT UNSIGNED NOT NULL Auto_increment,
+    artist VARCHAR(200),
+    name VARCHAR(200) NOT NULL,
+    release_date INT NULL,
+    sales FLOAT NULL, -- hello
+    genre VARCHAR(100),
+    PRIMARY KEY(id)
+    );
